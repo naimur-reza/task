@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  background-color: #030014;
+}
+
+.outer-box::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 9999px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  box-sizing: border-box;
+}
+
+.outer-box::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.782);
+  font-size: 0.73rem;
+  text-align: center;
+  width: max-content;
+}
+
+/* Border colors for each box */
+.outer-box-purple::before {
+  border: 2px solid rgba(164, 121, 255, 0.3); /* Purple */
+}
+
+.outer-box-blue::before {
+  border: 2px solid rgba(96, 165, 250, 0.3); /* Blue */
+}
+
+.outer-box-green::before {
+  border: 2px solid rgba(74, 222, 128, 0.3); /* Green */
+}
+
+.outer-box-pink::before {
+  border: 2px solid rgba(236, 72, 153, 0.3); /* Pink */
+}
+
+.outer-box-yellow::before {
+  border: 2px solid rgba(253, 224, 71, 0.3); /* Yellow */
+}
