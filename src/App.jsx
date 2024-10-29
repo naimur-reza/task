@@ -1,4 +1,5 @@
 import Magnafier from "./components/Magnafier";
+import Reader from "./components/Reader";
 
 import SuperPowers from "./components/SuperPowers";
 
@@ -9,8 +10,7 @@ const App = () => {
         <SuperPowers />
         <Magnafier />
       </div>
-
-      {/* <Reader /> */}
+      <Reader />
     </>
   );
 };

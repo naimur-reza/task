@@ -17,7 +17,7 @@ export default {
         "custom-yellow": "rgb(255, 193, 121)",
         "custom-purple": "rgb(164, 121, 255)",
       },
-      backgroundImage: {
+      background: {
         "reader-bg":
           "linear-gradient(267deg, rgba(99, 102, 241, 0.4) 13.23%, rgba(3, 0, 20, 0) 50%)",
       },
